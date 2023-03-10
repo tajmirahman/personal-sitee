@@ -1,0 +1,494 @@
+ *{
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+ }
+
+ /* ----------------Here Navber Starts---------------------- */
+
+
+ .navber{
+    background-color: rgb(4, 72, 99);
+    padding: 10px 0px;
+ }
+img{
+    width: 100px;
+    height: 100px;
+}
+
+h1{
+    font-size: 40px;
+    color: white;
+}
+a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+}
+.nav-logo{
+    text-align: center;
+
+}
+.nav-head h1{
+    text-align: center;
+    padding: 10px;
+}
+.nav-menu{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.nav-menu a:hover{
+    background-color: gray;
+    border-radius: 20px;
+}
+[class*="col-"]{
+    float: left;
+}
+[class*="col-"]{
+    width: 100%;
+}
+.navber::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* ----------------Here Navber Ends---------------------- */
+
+
+/* ----------------Here Weather Starts---------------------- */
+.weather{
+    padding: 130px 10px;
+    position: relative;
+    text-align: center;
+}
+.weather-head{
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    transition: transform 2s;
+}
+.weather-head:hover{
+    transform: rotate(360deg);
+}
+.weather-body h2{
+    font-family: 'Satisfy', cursive;
+    font-size: 40px;
+}
+.weather-body p{
+    font-size: 25px;
+    padding: 20px 0;
+}
+
+.weather-footer{
+    position: absolute;
+    left: 40px;
+    bottom: 20px;
+    transition: transform 2s;
+}
+.weather-footer:hover{
+    transform: rotate(360deg);
+}
+.weather::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* ----------------Here Weather Ends---------------------- */
+
+/*----------------- Abouts me Starts Here---------------- */
+
+.abouts-me{
+    text-align: center;
+    padding: 20px 10px;
+    background-color:cadetblue;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+h3{
+    font-size: 40px;
+}
+.dotted-hr{
+    border: dotted 6px white;
+    border-bottom: none;
+    width: 70px;
+    margin: 20px auto;
+
+}
+.aboutme-image img{
+    margin-top: 20px;
+    border: 2px solid white;
+    width: 200px;
+    height: 180px;
+    border-radius: 50%;
+    transition: 2s;
+}
+.aboutme-image img:hover{
+    transform: scale(2);
+}
+.aboutme-desc{
+    margin-top: 20px;
+    font-size: 22px;
+}
+.aboutme-desc p{
+    text-align: left;
+     
+}
+.aboutme-hr{
+    margin: 20px 10px;
+}
+.cv-button{
+    background-color: black;
+    border:none;
+    border-radius: 20px;
+    padding: 15px;
+    color: white;
+}
+
+
+
+
+.abouts-me::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*----------------- Abouts me Ends Here---------------- */
+
+/* ---------------Professional Starts Here------------- */
+
+.professional{
+   
+   background-color: rgb(211, 208, 208);
+    
+    
+}
+.work-experience{
+    background-color: gray;
+    padding: 20px 10px;
+    height: 510px;
+    border-radius: 10px;
+    
+    margin: 10px 5px;
+    
+}
+.work-experience:hover{
+    border: 2px solid black;
+    box-shadow: 0px 5px 8px 5px black;
+    border-radius: 10px;  
+}
+.work-icon{
+    padding: 20px 0px;
+    text-align: center;
+    
+}
+h4{
+    font-size: 25px;
+}
+.work-icon img{
+   
+    border: 3px solid black;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: floralwhite;
+}
+.experience-desc li{
+    font-size:  20px;
+    margin: 10px;
+}
+
+
+.education{
+    background-color: gray;
+    margin: 10px 5px;
+    height: 400px;
+    border-radius: 10px;
+    text-align: center;
+    height: 550px;
+    padding-left: 10px;
+}
+.education:hover{
+    border: 2px solid black;
+    box-shadow: 0px 5px 8px 5px black;
+    border-radius: 10px;  
+}
+.education-icon-image{
+    border: 3px solid black;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: floralwhite;
+
+}
+.education-tabel,table{
+    height: 300px;
+    width: 90%;
+    text-align: center;
+}
+
+
+.education-tabel,table,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;    
+
+}
+
+.progressber{
+    width: 100%;
+    height: 550px;
+    background-color: gray;
+    
+    border-radius: 10px;
+    
+    
+    
+}
+.progressber:hover{
+    box-shadow: 0px 5px 8px 5px;
+}
+h4{
+    text-align: center;
+    padding: 10px;
+    background-color: blue;
+    margin-bottom: 10px;
+
+
+}
+.prog-icon{
+    text-align: center;
+    padding: 10px;
+    
+}
+.prog-icon img{
+    border: 2px solid black;
+    border-radius: 50%;
+    
+}
+
+
+.prog-container li{
+    list-style-type: none;
+    margin: 30px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    position: relative;
+}
+
+.prog-container li::before{
+
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0px;
+
+    width: 100%;
+    height: 20px;
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+.prog-container li::after{
+
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0px;
+
+    width: 0%;
+    height: 20px;
+    background-color: yellowgreen;
+    border-radius: 20px;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+
+}
+
+.prog-container li.html::after{
+    animation-name: html;
+
+}
+@keyframes html{
+    to{
+        width: 90%;
+        opacity: .5;
+    }
+}
+
+.prog-container li.java::after{
+    animation-name: java;
+
+}
+@keyframes java{
+    to{
+        width: 50%;
+    }
+}
+
+.prog-container li.css::after{
+    animation-name: css;
+
+}
+@keyframes css{
+    to{
+        width: 90%;
+    }
+}
+
+.prog-container li.cplus::after{
+    animation-name: cplus;
+
+}
+@keyframes cplus{
+    to{
+        width: 40%;
+    }
+}
+
+.prog-container li.bootstrip::after{
+    animation-name: bootstrip;
+
+}
+@keyframes bootstrip{
+    to{
+        width: 50%;
+    }
+}
+
+
+.prog-container li.github::after{
+    animation-name: github;
+
+}
+@keyframes github{
+    to{
+        width: 30%;
+    }
+}
+
+.professional::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+
+/* ---------------Professional Ends Here------------- */
+
+
+
+
+/* -------------------Achivement start from here---------------- */
+
+.achivement-container{
+    background-color: rgb(66, 66, 154);
+    
+}
+.achivement{
+    padding: 10px 0px;
+}
+h5{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0px;
+    
+}
+.contact{
+    text-align: center;
+    padding: 10px 0px;
+    
+}
+
+.input{
+    text-align: center;
+    padding: 10px;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+.btn{
+    border: none;
+    padding: 10px 30px;
+    margin: 20px 10px;
+    font-size: 22px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+
+}
+
+.moreway-to-contact{
+    padding: 10px 0px;
+    text-align: center;
+}
+.media-link{
+    padding: 30px;
+}
+
+.media-link .button{
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+}
+
+ 
+
+
+
+
+
+
+.achivement-container::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* -------------------Achivement ends  here---------------- */
+
+
+
+
+   /* footer starts from here */
+
+   .footer{
+      background-color: black;
+      color: white;
+      text-align: center;
+      
+   }
+   
+   .footer-menu a{
+    display: block;
+   }
+
+   .footer-menu a:hover{
+     background-color: gray;
+     border: none;
+     border-radius: 50px;
+   }
+
+   .footer-desc{
+    font-size: 20px;
+    margin-top: 20px;
+   }
+  
+
+
+
+   .footer::after{
+    content: '';
+    display: table;
+    clear: both;
+   }
+
+
+
+    /* footer ends here */

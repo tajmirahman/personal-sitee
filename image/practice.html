@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .prog-container{
+            padding: 20px;
+            width: 400px;
+            height: 400px;
+            background-color: blueviolet;
+            border-radius: 20px; 
+        }
+        .prog-container:hover{
+            box-shadow: 5px 10px 10px 5px rgb(61, 4, 113)  ;
+        }
+        li{
+            list-style-type: none;
+            margin: 50px 10px;
+            position: relative;
+            text-transform: uppercase;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        .prog-container li::before{
+            content: '';
+            position: absolute;
+            top: calc( 100% + 5px);
+            left: 0;
+
+            background-color: gray;
+            width: 100%;
+            height: 20px;
+            border-radius: 1000px;
+            
+        }
+
+        .prog-container li::after{
+            content: '';
+            position: absolute;
+            top: calc( 100% + 5px);
+            left: 0;
+
+            background-color: rgb(163, 206, 32);
+            width: 0%;
+            height: 20px;
+            border-radius: 1000px;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            
+        }
+        .prog-container li.java::after{
+            animation-name: java;
+        }
+        @keyframes java{
+            to{
+                width: 90%;
+            }
+        }
+        .prog-container li.css::after{
+            animation-name: css;
+        }
+        @keyframes css{
+            to{
+                width: 80%;
+            }
+        }
+        .prog-container li.html::after{
+            animation-name: html;
+        }
+        @keyframes html{
+            to{
+                width: 100%;
+            }
+        }
+        .prog-container li.cplus::after{
+            animation-name: cplus;
+        }
+        @keyframes cplus{
+            to{
+                width: 20%;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+
+        <div class="prog-container">
+            <ul>
+                <li class="java">java</li>
+                <li class="css">css</li>
+                <li class="html">html</li>
+                <li class="cplus">c++</li>
+            </ul>
+        </div>
+    
+</body>
+</html>
